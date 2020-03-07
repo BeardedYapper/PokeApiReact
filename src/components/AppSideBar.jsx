@@ -17,9 +17,7 @@ class AppSideBar extends React.Component{
 
 
   search(p) {
-    axios.get(`http://pokeapi.co/api/v2/pokemon?limit=151`).then(response => {
-      console.log(response);
-      var data= response.data.results
+    axios.get(`https://pokeapi.co/api/v2/pokemon?limit=151`).then(response => {
         this.setState({
             pokemons: response.data.results
         });
@@ -42,7 +40,7 @@ class AppSideBar extends React.Component{
        var id= this.state.pokemons.indexOf(pokemon) + 1;
         return(
           <li key={ id }>
-            <a href="#" onClick={() => this.props.handleOnClick(id)}>{ pokemon.name }</a>
+            <a onClick={() => this.props.handleOnClick(id)}>{ pokemon.name }</a>
          </li>
         );
       }

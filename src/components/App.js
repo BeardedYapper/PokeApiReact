@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    axios.get(`http://pokeapi.co/api/v2/pokemon/1`)
+    axios.get(`https://pokeapi.co/api/v2/pokemon/1`)
       .then(res => {
         console.log(res.data)
         const pokemon = new Pokemon(res.data);
@@ -26,7 +26,7 @@ class App extends Component {
       }).catch(err => console.log(err));
   }
   handleOnClick(id) {
-    axios.get(`http://pokeapi.co/api/v2/pokemon/${id}/`)
+    axios.get(`https://pokeapi.co/api/v2/pokemon/${id}/`)
       .then(res => {
         console.log(res.data)
         const pokemon = new Pokemon(res.data);
