@@ -1,0 +1,40 @@
+.detail-view {
+  width: 40vw;
+  height: 30vh;
+  padding: 1%;
+  background-color: #df095e;
+  border-top-right-radius: 1%;
+  border-bottom-right-radius: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sprite-image {
+  width: 30vw;
+  height: 70vh;
+  margin: 3% auto;
+  background-color: #585858;
+  border: 15px solid #DEDEDE;
+  border-radius: 10hv;
+  color: #585858;
+}
+
+.data-wrapper {
+  width: 80%;
+  height: 100vh;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #585858;
+  border-radius: 5px;
+  color: #FFF;
+}
+
+.data-name {
+  margin: 0 0 5px;
+  font-size: auto;
+}
+
+.data-char {
+  font-size: auto;
+}
